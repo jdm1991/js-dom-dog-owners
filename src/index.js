@@ -124,14 +124,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const labelName = document.createElement('label')
         labelName.setAttribute('for', 'name')
-        labelName.inneertext = 'dogs name'
+        labelName.innerText = 'Dogs name'
 
         const inputName = document.createElement('input')
         inputName.setAttribute('type', 'text')
         inputName.setAttribute('id', 'name')
         inputName.setAttribute('name','name')
+        inputName.placeholder = 'Enter the dogs name'
 
-        const labelPicture = document.createElement('input')
+        const labelPicture = document.createElement('label')
         labelPicture.setAttribute('for', 'image')
         labelPicture.innerText = 'Dogs picture'
 
@@ -139,8 +140,9 @@ document.addEventListener('DOMContentLoaded', function () {
         inputPicture.setAttribute('type', 'url')
         inputPicture.setAttribute('id', 'image')
         inputPicture.setAttribute('name', 'image')
+        inputPicture.placeholder = 'Enter the URL for the dogs picture'
 
-        const labelBio = document.createElement('input')
+        const labelBio = document.createElement('label')
         labelBio.setAttribute('for', 'bio')
         labelBio.innerText = 'Dogs bio'
 
@@ -148,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
         inputBio.setAttribute('rows', '5')
         inputBio.setAttribute('id', 'bio')
         inputBio.setAttribute('name', 'bio')
+        inputBio.placeholder = 'Enter the dogs bio'
 
         const inputSubmit = document.createElement('input')
         inputSubmit.setAttribute('type', 'submit')
