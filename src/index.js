@@ -177,10 +177,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             data.unshift(newDog)
-            state.isAddingDog = false
-            state.selectedDog = null
-            render()
-        })
+            data.isAddingDog = false
+            data.selectedDog = null
+            renderDogList()
+
+    })
     
         sections.append(form)
     
